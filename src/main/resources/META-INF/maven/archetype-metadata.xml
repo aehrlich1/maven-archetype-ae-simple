@@ -4,8 +4,11 @@
     xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 https://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
     name="archetype-ae-simple">
   <fileSets>
-    <fileSet filtered="false" packaged="false">
+    <fileSet filtered="true" packaged="false">
       <directory>src/main/java</directory>
+        <includes>
+          <include>**/*.java</include>
+        </includes>
     </fileSet>
   </fileSets>
 </archetype-descriptor>
